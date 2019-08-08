@@ -18,11 +18,9 @@ class ViewController: UIViewController {
 
     
     
-    
     @IBAction func buttonAction(_ sender: UIButton) {
         
         selectNum = sender.tag
-        
         
         performSegue(withIdentifier: "showData", sender: nil)    // 画面遷移したい場所でこのコードを記述。Identifier を変える。
     }
@@ -36,7 +34,4 @@ class ViewController: UIViewController {
         
         vc.select = selectNum    // 遷移先の select に selectNum を代入
     }
-   
-    
-    
 }
